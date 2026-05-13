@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block background %}{% static 'core/img/about-bg.jpg' %}{% endblock %}
+
+{% block titulo %}ACERCA DE{% endblock %}
+{% block subtitulo %}Conoce más sobre mí{% endblock %}
+
+{% block content %}
+<div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+      <img class="img-fluid avatar" src="{% static 'core/img/avatar.jpg' %}" alt="Avatar de Paulina">
+    </div>
+    <div class="col-lg-7 col-md-8">
+      <h2 class="section-heading">Paulina Intriago</h2>
+      <p>Como estudiante de TI en la UTM, desarrollo una plataforma web avanzada utilizando el lenguaje <b>Python</b> y el framework <b>Django</b>.</p>
+      <p>Integro <b>PostgreSQL</b> como motor de base de datos profesional para garantizar un sistema seguro, escalable y eficiente.</p>
+    </div>
+  </div>
+</div>
+<hr>
+{% endblock %}

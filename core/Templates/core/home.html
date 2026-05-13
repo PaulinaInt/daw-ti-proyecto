@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% extends 'core/base.html' %}
+{% load static %}
+{% block background %} {% static 'core/img/home-bg.jpg' %}{% endblock  %}
+{% block content %}
+
+ <h1>Portada</h1> <h2> Contenido de la portada </h2>
+
+<ul>
+    <li><a href="{% url 'home' %}">Portada<a/></li>
+    <li><a href="{% url 'about' %}">Acerca de<a/></li>
+    <li><a href="{% url 'portafolio' %}">Portafolio<a/></li>
+    <li><a href="{% url 'contacto' %}">Contacto<a/></li>
+</ul>
+{% endblock %}
+
+</body>
+</html>
