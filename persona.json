@@ -1,0 +1,1 @@
+[{"model": "core.persona", "pk": 1, "fields": {"nombres": "paulina", "apellidos": "intriago", "direccion": "10 de agosto", "telefono": "0968288452", "titulo_academico": "ingeniera en ti", "biografia": "Soy una estudiante de la carrera de tecnologias de la información de la utm", "correo_electronico": "pintriago1551@utm.edu.ec", "dedicacion": "estudiantte"}}]
