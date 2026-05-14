@@ -1,0 +1,1 @@
+[{"model": "portfolio.portfolio", "pk": 2, "fields": {"title": "Proyecto Uno", "description": "Prueba de mi proyecto en Django con python", "image": "portfolio/images_sght2Vs.jpg", "enlace": null, "created": "2026-05-14T00:14:47.629Z", "updated": "2026-05-14T00:14:47.629Z"}}]
