@@ -1,7 +1,13 @@
 from django.contrib import admin
-from .models import Portfolio
+from .models import Portfolio, Tarea
 
+@admin.register(Portfolio)
 class PortfolioAdmin(admin.ModelAdmin):
-    readonly_fields = ('created', 'updated')  # nombres correctos
+    list_display = ("title", "description", "enlace", "created", "updated")
+    search_fields = ("title", "description")
+    list_filter = ("created", "updated")
+    readonly_fields = ("created", "updated")
 
-admin.site.register(Portfolio, PortfolioAdmin)
+@admin.register(Tarea)
+class TareaAdmin(admin.ModelAdmin):
+    list_display = ("titulo", "archivo")

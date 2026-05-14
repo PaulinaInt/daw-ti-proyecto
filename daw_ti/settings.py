@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-3-d1rz1t$ujwhiuqo9uj1z^3!&ym(tzzot8#z$oue)jg!rp%7d
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True #debe estar en false
 
-ALLOWED_HOSTS = ['paulinaint.pythonanywhere.com']
+ALLOWED_HOSTS = ['paulinaint.pythonanywhere.com', '127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -131,3 +131,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / "core/static"]
 STATIC_ROOT = BASE_DIR / "staticfiles"
+# Archivos multimedia (subidos por el usuario desde el admin)
+MEDIA_URL = '/media/'
+MEDIA_ROOT = BASE_DIR / 'media'
+DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
